@@ -1,0 +1,223 @@
+// Num 22 //
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+
+float MyCircArea(int a, int b) {
+
+	float PI = 3.14;
+
+	
+
+	return ((PI * b * b / 4) * ((2 * a - b)) / (2 * a + b));
+
+
+}
+
+
+
+	int main()
+
+	{
+
+
+		cout << MyCircArea(20, 10) << endl;
+
+		return 0;
+	}
+
+// ************************ Num 23 **************************************//
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+
+
+float MyRecArea(int a, int b, int c) {
+	
+	float PI = 3.14;
+	int P = (a + b + c) / 2;
+	float T = (a * b * c) / (4 * sqrt(P * (P - a) * (P - b) * (P - c)));
+	//float T = T * T;
+	//return PI * T;
+	return pow(T, 2) * PI;
+	
+	
+}
+
+
+
+
+
+	int main()
+
+	{
+		
+		cout << MyRecArea(5, 6, 7) << endl;
+
+	
+
+		return 0;
+	}
+
+// ************************ Num 31 **************************************//
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+
+
+int MyNumberPower(int a, int b) {
+
+	return pow(a, b);
+
+}
+
+
+
+
+
+
+
+	int main()
+
+	{
+		
+		cout << MyNumberPower(3, 2) << endl;
+		cout << MyNumberPower(3, 3) << endl;
+		cout << MyNumberPower(3, 4) << endl;
+
+	
+
+		return 0;
+	}
+
+
+// ************************ Num 32 **************************************//
+
+The same as the preview
+
+// ************************ Num 42 **************************************//
+
+
+#include <iostream>
+using namespace std;
+
+
+
+float TotalSeconds(int NumberOfDays, int NumberOfHours, int NumberOfMinutes, int NumberOfSeconds) {
+
+
+	return (NumberOfDays * 24 * 60 * 60) + (NumberOfHours * 60 * 60) + (NumberOfMinutes * 60) + (NumberOfSeconds);
+
+
+
+}
+
+
+
+
+
+int main()
+
+{
+	cout << "The total number of seconds is : " << TotalSeconds(2, 5, 45, 35) << endl;
+	return 0;
+
+}
+// ************************ Num 43 **************************************//
+
+
+
+
+#include <iostream>
+using namespace std;
+
+
+void SecondsDivide() {
+
+	int  TotalSeconds = 193535;
+	int   SecondsPerDay = 86400;
+	int   SecondsPerHour = 3600;
+	int  SecondsPerMinutes = 60;
+
+	cout << endl;
+
+
+   int NumberOfDays = TotalSeconds / SecondsPerDay;
+
+
+	cout << endl;
+
+
+	cout << endl;
+
+	int DaysRemainder = TotalSeconds % SecondsPerDay;
+
+	cout << endl;
+
+	int NumberOfHours = DaysRemainder / SecondsPerHour;
+
+	cout << endl;
+
+
+	cout << endl;
+
+	int HoursRemainder = DaysRemainder % SecondsPerHour;
+
+	cout << endl;
+
+
+
+	int NumberOfMinutes = HoursRemainder / SecondsPerMinutes;
+
+	cout << endl;
+
+
+	cout << endl;
+
+	int NumberOfSeconds = HoursRemainder % SecondsPerMinutes;
+
+	cout << endl;
+
+	cout << "Number Of Days, Hours, Minutes and Seconds is respectively as follow : " << NumberOfDays << ": " << NumberOfHours << ": " << NumberOfMinutes << ": " << NumberOfSeconds << endl;
+
+
+
+
+	cout << endl;
+
+
+	
+}
+
+
+
+
+
+
+int main()
+
+{
+	
+	SecondsDivide();
+
+
+	return 0;
+
+}
+
+
+
+
+
